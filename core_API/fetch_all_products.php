@@ -16,3 +16,6 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
         echo json_encode(array('message' => 'NO DATA FOUND', 'status' => false));
     }
 }
+else{
+    echo json_encode(array('message' => 'Only GET Method allowed', 'status' => false ));
+}
